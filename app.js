@@ -113,7 +113,34 @@
 //   profileDataArr.forEach((profileItem) => console.log(profileItem));
 // };
 
+//------------------9.2.4---------------
+// method 1
+// const generatePage = () => "Name: Jane, Github: janehub";
+// console.log(generatePage());
+
+// method 2
+// const generatePage = (userName, githubName) => `Name: ${userName}, Github: ${githubName}`;
+// console.log(generatePage("jane", "janehub"));
+
+// method 3
+// const generatePage = (userName, githubName) => {
+//   return `
+//       Name: ${userName}
+//       GitHub: ${githubName}
+//     `;
+// };
+// console.log(generatePage("jane", "janehub"));
+
+//--------------9.2.5-------------
+const fs = require("fs");
+const generatePage = require("./src/page-template");
 
 const profileDataArgs = process.argv.slice(2);
 
-console.log(profileDataArgs);
+const [name, github] = profileDataArgs;
+
+fs.writeFile("./index.html", generatePage(name, github), (err) => {
+  if (err) throw new Error(err);
+
+  console.log("Portfolio complete! Check out index.html to see the output!");
+});
