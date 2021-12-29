@@ -1,1 +1,5 @@
 .DS_Store
+
+node_modules/
+# If the node_modules folder was accidentally tracked by git, 
+# use the following command to remove the tracking: git rm -r --cached node_modules.
