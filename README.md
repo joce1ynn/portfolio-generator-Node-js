@@ -1,6 +1,11 @@
 # portfolio-generator-Node-js
 
-## Node.js
+## Build With
+* Node.js
+* Inquirer.js
+* JavaScript
+* HTML
+* CSS
 
 ## Portfolio Example
 
