@@ -11,6 +11,7 @@ Project is created with:
 - Javascript
 - Node.js
 - Inquirer.js
+- CSS
 
 ## Installation
 
