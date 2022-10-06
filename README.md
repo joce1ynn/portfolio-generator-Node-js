@@ -23,7 +23,7 @@ npm i
 
 ## Usage
 
-After installing npm packages, the application will be invoked by using the following command: `node index.js`.
+After installing npm packages, the application will be invoked by using the following command: `node app.js`.
 It accepts user input, and can display the results on a formatted HTML file generated in the dist folder.
 
 ### Example Screenshot
